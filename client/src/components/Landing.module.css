@@ -1,0 +1,62 @@
+.container {
+    background: url("../resources/img/bike-ride-pokemon-emerald-pixel-HD-live-wallpaper.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Pokemon;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+}
+
+.LandingLink {
+    text-decoration: none;
+    position: absolute;
+    left: 39%;
+    top: 75%;
+}
+
+.LandingLink p {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    /* Parpadeo */
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.LandingLink p:hover {
+    color: rgb(128, 128, 128);
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0.0;
+    }
+
+
+    100% {
+        opacity: 1.0;
+    }
+}

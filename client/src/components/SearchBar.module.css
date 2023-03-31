@@ -1,0 +1,64 @@
+.input {
+
+    background-color: #383838;
+    border: 1ex solid none;
+    margin: 0 15px;
+    padding: 0;
+    color: #383838;
+    word-wrap: break-word;
+    outline: 7px solid #383838;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    max-width: 190px;
+    font-weight: bold;
+    font-family: Pokemon;
+}
+
+.input:hover {
+    border-top-width: 0.2em;
+    background-color: gold;
+}
+
+.input:focus {
+    border-top-width: 0.2em;
+    background-color: #f1e8e8;
+}
+
+.button {
+    font-family: Pokemon;
+    padding: 0.1em 0.25em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #383838;
+    border: 0.08em solid #f1e8e8;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+.button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #383838;
+    border-radius: 0.2em;
+    font-size: 10px;
+    color: gold;
+    border: 0.08em solid #f1e8e8;
+    box-shadow: 0 0.4em 0.1em 0.019em gold;
+}
+
+.button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #f1e8e8;
+}
+
+.button span:not(hover) {
+    transition: all 1s;
+}

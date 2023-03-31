@@ -1,0 +1,107 @@
+/* Estilos del nav general */
+.navContainer nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 0 20px;
+    font-family: Pokemon;
+    font-size: 12px;
+}
+
+.searchButtons {
+    display: grid;
+    grid-template-columns: repeat(100px, 200px);
+    gap: 15px;
+}
+
+.buttonNav {
+    display: grid;
+    grid-template-columns: repeat(100px, 200px);
+
+}
+
+/* Estilos del nav general */
+
+
+
+/*Estilos del Contenedor cards*/
+.containerCards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 10px;
+}
+
+/*Estilos del Contenedor cards*/
+
+
+/* Estilos de los botones */
+.button {
+    font-family: Pokemon;
+    padding: 0.1em 0.25em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #383838;
+    border: 0.08em solid #f1e8e8;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+.button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #383838;
+    border-radius: 0.2em;
+    font-size: 10px;
+    color: gold;
+    border: 0.08em solid #f1e8e8;
+    box-shadow: 0 0.4em 0.1em 0.019em gold;
+}
+
+.button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #f1e8e8;
+}
+
+.button span:not(hover) {
+    transition: all 1s;
+}
+
+/* Estilos del boton */
+
+
+/* Estilos del LOGO*/
+.navContainer img {
+    position: absolute;
+    left: 35vw;
+    top: 5px;
+    width: 400px;
+    height: auto;
+}
+
+/* Estilos del LOGO*/
+
+
+/*Estilos de los filtros*/
+.buttonNav select {
+    font-family: Pokemon;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+/*Estilos de los filtros*/
+
+.link{
+    text-decoration: none;
+}

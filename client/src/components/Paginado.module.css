@@ -1,0 +1,25 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Pokemon;
+}
+
+.navContainer li {
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+.navContainer button {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navContainer button:hover {
+    background-color: gold;
+}
