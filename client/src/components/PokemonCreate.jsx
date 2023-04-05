@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { postPokemons, getTypes } from "../redux/actions"
 import { useDispatch, useSelector } from "react-redux";
+import style from "./PokemonCreate.module.css"
 
 const PokemonCreate = () => {
     const dispatch = useDispatch();
@@ -114,17 +115,19 @@ const PokemonCreate = () => {
     }, [dispatch])
 
     return (
-        <div>
+        <div className={style.bodyContainer}>
             <Link to="/home">
-                <button>
-                    Volve master 😉
+                <button className={style.button}>
+                    <span>
+                        Volver
+                    </span>
                 </button>
             </Link>
 
-            <h1>Crea tu pokemon</h1>
+            <h1 className={style.title}>Crea tu pokemon</h1>
 
             <form onSubmit={(e) => { handleSubmit(e) }}>
-                <div>
+                <div className={style.formContainer}>
 
                     <label>Nombre: </label>
                     <input type="text" value={input.name} name="name" onChange={(e) => { handleChange(e) }} />
@@ -149,7 +152,7 @@ const PokemonCreate = () => {
                     <label>altura: </label>
                     <input type="number" value={input.altura} name="altura" onChange={(e) => { handleChange(e) }} />
                     <p >{errors.altura}</p>
-                    
+
 
                     <label>peso: </label>
                     <input type="number" value={input.peso} name="peso" onChange={(e) => { handleChange(e) }} />
@@ -178,7 +181,11 @@ const PokemonCreate = () => {
                         );
                     })}
 
-                    <button type="submit" >Crear Personaje</button>
+                    <button type="submit" className={style.button2}>
+                        <span>
+                            Crear Personaje
+                        </span>
+                    </button>
 
 
                 </div>

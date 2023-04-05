@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, 300px);
     gap: 10px;
 }
 
@@ -103,5 +103,6 @@
 /*Estilos de los filtros*/
 
 .link{
+    width: 250px;
     text-decoration: none;
 }
